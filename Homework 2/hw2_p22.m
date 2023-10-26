@@ -35,7 +35,7 @@ syms pq(t)
 ode3=diff(pq,t)==ap*am/bm-bp*pq;
 cond3=pq(0)==0;
 pqSol(t)=dsolve(ode3,cond3);
-
+disp(pqSol)
 %% plotting
 figure(1)
 
